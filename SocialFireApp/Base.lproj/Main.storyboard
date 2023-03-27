@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfQ-YV-fLv">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfQ-YV-fLv">
                                 <rect key="frame" x="75" y="408.66666666666669" width="85" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="097-DM-GfN"/>
@@ -78,7 +78,9 @@
                     <navigationItem key="navigationItem" id="bd8-4j-fzR"/>
                     <connections>
                         <outlet property="emailTextField" destination="VwQ-lt-LUr" id="BAj-yi-Cx6"/>
+                        <outlet property="loginButton" destination="vfQ-YV-fLv" id="PGx-Oa-Eia"/>
                         <outlet property="passwordTextField" destination="UPY-ht-Wpf" id="JrE-3R-ssm"/>
+                        <outlet property="signUpButton" destination="odB-JW-38o" id="QPg-Ly-huF"/>
                         <segue destination="RWA-Ap-vKU" kind="presentation" identifier="toFeedVC" modalPresentationStyle="fullScreen" id="h1S-pn-LZA"/>
                     </connections>
                 </viewController>
@@ -154,7 +156,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="mmu-Mn-PP0">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="RWA-Ap-vKU" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" modalPresentationStyle="fullScreen" id="RWA-Ap-vKU" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="xUY-5B-H6P"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IYQ-Qo-GIe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
